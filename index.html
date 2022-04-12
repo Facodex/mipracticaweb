@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>mipracticaweb</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- fonts body-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- fonts titulo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- scripts -->
+    <script src="funcions/01-starts-form.js"></script>
+    <script src="funcions/02-game1.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">E n t r e t e n c i ó n W e b</h1>
+    </header>
+    <!-- section form -->
+    <div class="card">
+        <div>
+            <h2>Completa el formulario jugador!</h2>
+            <form action="#" id="formulario">
+                <input type="text" id="nombre">NOMBRE</input><br><br>
+                <input type="text" id="apellido">APELLIDO</input><br><br>
+                <input type="email" id="email">EMAIL</input><br><br>
+                <input type="number" id="edad">EDAD</input><br><br>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div> 
+        <div>
+            <h2>Aqui están tus datos jugador!</h2>
+            <ul id="listaDatos">
+
+            </ul>
+            
+        </div>
+    </div>
+    <!-- section gameone -->
+    <h2 id="titGameOne">Adivina que animal se esconde en cada foto!</h2>
+    <div id="cardGameOne">
+        <div class="game1">
+            <img src="game1/zorro.jpg" class="imgGameOne" id="img1">
+            <input type="radio" name="check" id="caja1">Gato</input>
+            <input type="radio" name="check" id="caja2">Zorro</input>
+            <input type="radio" name="check" id="caja3">Perro</input>
+        </div>
+        <div class="game1">
+            <img src="game1/jirafa.jpg" class="imgGameOne" id="img2">
+            <input type="radio" name="check2" id="caja4">Camello</input>
+            <input type="radio" name="check2" id="caja5">Cebra</input>
+            <input type="radio" name="check2" id="caja6">Jirafa</input>
+        </div>
+        <div class="game1">
+            <img src="game1/mapache.jpg" class="imgGameOne" id="img3">
+            <input type="radio" name="check3" id="caja7">Castor</input>
+            <input type="radio" name="check3" id="caja8">Mapache</input>
+            <input type="radio" name="check3" id="caja9">Suricata</input>
+        </div>
+        <div>
+            <button type="button" id="btnGameOne">Listo</button><br>
+            <button type="button" class="resetear">Volver</button>
+        </div>
+        <div class="puntosGameOne">
+            <h2>Puntuación: <span id="pointsOne"></span></h2>
+        </div>
+    </div>
+    <footer>
+        <a href="#">Contacto</a>
+        <a href="#">Ayuda</a>
+        <a href="#">Inicio</a>
+    </footer>
+</body>
+
+</html>

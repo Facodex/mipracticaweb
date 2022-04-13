@@ -16,6 +16,7 @@
     <!-- scripts -->
     <script src="funcions/01-starts-form.js"></script>
     <script src="funcions/02-game1.js"></script>
+    <script src="funcions/03-game2.js"></script>
 </head>
 <body>
     <header>
@@ -30,7 +31,7 @@
                 <input type="text" id="apellido">APELLIDO</input><br><br>
                 <input type="email" id="email">EMAIL</input><br><br>
                 <input type="number" id="edad">EDAD</input><br><br>
-                <button type="submit">ENVIAR</button>
+                <button type="submit" id="btnForm">ENVIAR</button>
             </form>
         </div> 
         <div>
@@ -69,6 +70,44 @@
         <div class="puntosGameOne">
             <h2>Puntuación: <span id="pointsOne"></span></h2>
         </div>
+    </div>
+    <!-- section gametwo -->
+    <div class="cardGameTwo">
+        <div id="titGameTwo">
+            <h2>Te reto a hacer 4 operaciones que den como resultado 200!</h2>
+            <ul id="resGameTwo">
+                
+            </ul>
+        </div>
+        <table id="calculadora">
+            <tr>
+              <td colspan="4"><span id="resultado"></span></td>
+            </tr>
+            <tr>
+              <td><button id="siete">7</button></td>
+              <td><button id="ocho">8</button></td>
+              <td><button id="nueve">9</button></td>
+              <td><button id="division">/</button></td>
+            </tr>
+            <tr>
+              <td><button id="cuatro">4</button></td>
+              <td><button id="cinco">5</button></td>
+              <td><button id="seis">6</button></td>
+              <td><button id="multiplicacion">*</button></td>
+            </tr>
+            <tr>
+              <td><button id="uno">1</button></td>
+              <td><button id="dos">2</button></td>
+              <td><button id="tres">3</button></td>
+              <td><button id="resta">-</button></td>
+            </tr>
+            <tr>
+              <td><button id="igual">=</button></td>
+              <td><button id="reset">C</button></td>
+              <td><button id="cero">0</button></td>
+              <td><button id="suma">+</button></td>
+            </tr>
+          </table>
     </div>
     <footer>
         <a href="#">Contacto</a>

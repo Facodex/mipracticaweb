@@ -46,7 +46,20 @@ header{
     justify-content: space-around;
     border-radius: 50px;
 }
+.card input{
+    margin-right: 10px;
+}
 
+#btnForm{
+    display: block;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: #FF00FF;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #EE8DEE ;
+}
 /* game 1 adivinanza */
 #titGameOne{
     text-align: center;
@@ -101,6 +114,54 @@ header{
     border-radius: 10px;
     box-shadow: 0 0 20px #EE8DEE ;
 }
+/*Game 2 styles*/
+.cardGameTwo{
+    color: white;
+    background-image: url(../photos/fondo2.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+#calculadora{
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* background-color: #DC4C46; */
+    width: 250px;
+    height: 350px;
+    border-radius: 25px;
+    justify-content: center;
+}
+#calculadora td button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    
+}
+#resultado{
+    color: black;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 70px;
+    line-height: 100px;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow-y: scroll;
+  }
 
 /* style footer */
 footer{

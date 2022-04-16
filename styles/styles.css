@@ -94,26 +94,7 @@ header{
     border-radius: 10px;
     border-style: solid;
 }
-#btnGameOne{
-    display: block;
-    font-size: 30px;
-    width: 100px;
-    height: 50px;
-    color: white;
-    background-color: #FF00FF;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #EE8DEE ;
-}
-.resetear{
-    display: block;
-    font-size: 30px;
-    width: 100px;
-    height: 50px;
-    color: white;
-    background-color: #FF00FF;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #EE8DEE ;
-}
+
 /*Game 2 styles*/
 .cardGameTwo{
     color: white;
@@ -121,13 +102,17 @@ header{
     background-repeat: repeat-x;
     background-size: contain;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
     padding-top: 30px;
     display: flex;
     justify-content: space-around;
     border-radius: 50px;
+}
+#titGameTwo{
+    width: 400px;
+    margin: 0 auto;
 }
 #calculadora{
     display: block;
@@ -141,11 +126,11 @@ header{
     justify-content: center;
 }
 #calculadora td button{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
-    justify-content: center;
     margin: 0 auto;
+    justify-content: center;
     border-radius: 15px;
     
 }
@@ -162,7 +147,27 @@ header{
     border-radius: 25px;
     overflow-y: scroll;
   }
-
+/* Styles boton play and reset */
+.btnPlay{
+    display: block;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: #FF00FF;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #EE8DEE ;
+}
+.resetear{
+    display: block;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: #FF00FF;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #EE8DEE ;
+}
 /* style footer */
 footer{
     width: 100%;

@@ -20,6 +20,10 @@ window.addEventListener('load', function(){
     var igual = document.querySelector('#igual');
     var reset = document.querySelector('#reset');
     var resultado = document.querySelector('#resultado');
+    // variable de la ul resultado
+    var ulResultado = document.querySelector('#resGameTwo');
+    // variable de los botones play y reset
+    var btnReset2 = document.querySelector('#btnReset2');
 
     //variables operando
     var operandoa;
@@ -84,7 +88,9 @@ window.addEventListener('load', function(){
     igual.addEventListener('click', function(){
         operandob = resultado.textContent;
         resolver();
+        darResultado();
     })
+
     reset.addEventListener('click', function(){
         resetear();
     });
@@ -101,8 +107,8 @@ window.addEventListener('load', function(){
         operacion = '';
     }
 
+    var res;
     function resolver(){
-        var res;
         switch (operacion) {
             case '+':
                 res = parseFloat(operandoa) + parseFloat(operandob);
@@ -121,7 +127,31 @@ window.addEventListener('load', function(){
         resultado.textContent = res;
     };
 
+    //funcion para dar resultados dentro del div de puntuacion
+    var x = 0; //la ocupare para ver si el jugador gana o pierde
+    function darResultado(){
+        if (res == 200) {
+            var p = document.createElement('li');
+            p.append(res);
+            ulResultado.append(p);
+            x ++;
+        }else{
+            alert("mal");
+        }
+    }
+
+
+    // funcion de botones jugar y volver
+    btnReset2.addEventListener('click', function(){
+        location.reload('file:///C:/Users/pc/Desktop/nextlevel/mipracticaweb/index.html');
+    });
+
+    btnGameTwo.addEventListener('click', function(){ 
+        if (x == 4) { 
+            alert("ganaste");
+        } else {
+            alert("perdiste");
+        }
+    });
 
 });
-
-

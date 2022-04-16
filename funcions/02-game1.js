@@ -8,7 +8,7 @@ window.addEventListener('load', function(){
     var img2 = document.querySelector('#img2');
     var img3 = document.querySelector('#img3');
     var pointsOne = document.querySelector('#pointsOne');
-    var btnreset = document.querySelector('.resetear');
+    var btnReset = document.querySelector('.resetear');
 
 
     btnGameOne.addEventListener("click", function darResultado(){
@@ -22,7 +22,7 @@ window.addEventListener('load', function(){
         }
         
     });
-    btnreset.addEventListener('click', function(){
+    btnReset.addEventListener('click', function(){
         location.reload('file:///C:/Users/pc/Desktop/nextlevel/mipracticaweb/index.html?#');
     });
 });

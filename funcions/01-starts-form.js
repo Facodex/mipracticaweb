@@ -14,7 +14,7 @@ window.addEventListener('load', function(){
         }
     }, 2000);
 
-    //2- Pedir los datos por el formulario y mostrarlos por pantalla
+    // 2- Pedir los datos por el formulario y mostrarlos por pantalla
 
     var formulario = document.querySelector('#formulario');
     var nombre = document.querySelector('#nombre');
@@ -24,12 +24,14 @@ window.addEventListener('load', function(){
     var datos = [nombre, apellido, email, edad];
     var listaDatos = document.querySelector('#listaDatos');
 
-    formulario.addEventListener('submit', function(){
+    formulario.addEventListener('submit', function(e){
+        e.preventDefault();
         for (var i in datos) {
             var li = document.createElement ('li');
             li.append(datos[i].value);
             listaDatos.append(li);
         }
+        return false;
     });
 });
 

@@ -1,0 +1,50 @@
+
+/* game 1 adivinanza */
+
+#cardGameOne{
+    color: white;
+    background-image: url(../photos/fondo2.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+
+#titGameOne{
+    text-align: center;
+}
+
+#cardGameOne div{
+    display: inline-flex;
+    padding: 20px;
+    margin: 0 auto;
+    margin-left: 30px;
+
+}
+#cardGameOne img{
+    width: 150px;
+    height: 150px;
+    opacity: 0.10;
+    border-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.game1 ul{
+    list-style: none;
+}
+.game1 li{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.btnDream button{
+    margin: 20px;
+}
+

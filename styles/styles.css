@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive;
     background-image: url(../photos/portada.jpg);
     background-repeat: no-repeat;
     width: 100%;
@@ -32,7 +32,7 @@ header{
     font-family: 'Righteous', cursive;
 }
 
-/* styles tarjetas */
+/* styles TARJETA FORM */
 .card{
     color: white;
     background-image: url(../photos/fondo2.png);
@@ -45,129 +45,81 @@ header{
     display: flex;
     justify-content: space-around;
     border-radius: 50px;
+    font-family: 'Bangers', cursive;
 }
 .card input{
     margin-right: 10px;
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+}
+
+.card h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Bangers', cursive;
+    text-decoration: underline;
 }
 
 #btnForm{
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     width: 100px;
     height: 50px;
     color: white;
     background-color: #FF00FF;
     border-radius: 10px;
     box-shadow: 0 0 20px #EE8DEE ;
-}
-/* game 1 adivinanza */
-#titGameOne{
-    text-align: center;
-    margin-top: 30px;
+    font-family: 'Bangers', cursive;
 }
 
-#cardGameOne{
-    color: white;
-    background-image: url(../photos/fondo2.png);
-    background-repeat: repeat-x;
-    background-size: contain;
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 50px;
-}
-.game1{
+/* styles de datos  */
+#datos{
     display: block;
+    justify-content: center;
 }
-.game1 input{
-    display: block;
-}
-#cardGameOne img{
-    width: 150px;
-    height: 150px;
-    opacity: 0.10;
-    border-color: white;
-    border-radius: 10px;
-    border-style: solid;
+#datos li{
+    padding: 10px;
+    font-size: 20px;
+    list-style:circle;
 }
 
-/*Game 2 styles*/
-.cardGameTwo{
-    color: white;
-    background-image: url(../photos/fondo2.png);
-    background-repeat: repeat-x;
-    background-size: contain;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 50px;
-}
-#titGameTwo{
-    width: 400px;
-    margin: 0 auto;
-}
-#calculadora{
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    margin-bottom: 20px;
-    /* background-color: #DC4C46; */
-    width: 250px;
-    height: 350px;
-    border-radius: 25px;
-    justify-content: center;
-}
-#calculadora td button{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    border-radius: 15px;
-    
-}
-#resultado{
-    color: black;
-    display: block;
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 50px;
-    width: 200px;
-    height: 70px;
-    line-height: 100px;
-    background-color: #fff;
-    border-radius: 25px;
-    overflow-y: scroll;
-  }
-/* Styles boton play and reset */
+/* Styles boton play and reset GLOBALES */
 .btnPlay{
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     width: 100px;
     height: 50px;
     color: white;
     background-color: #FF00FF;
     border-radius: 10px;
     box-shadow: 0 0 20px #EE8DEE ;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-family: 'Bangers', cursive;
 }
+
 .resetear{
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     width: 100px;
     height: 50px;
     color: white;
     background-color: #FF00FF;
     border-radius: 10px;
     box-shadow: 0 0 20px #EE8DEE ;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-family: 'Bangers', cursive;
 }
+
 /* style footer */
 footer{
     width: 100%;

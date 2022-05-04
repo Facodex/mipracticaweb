@@ -146,12 +146,17 @@ window.addEventListener('load', function(){
         location.reload('file:///C:/Users/pc/Desktop/nextlevel/mipracticaweb/index.html');
     });
 
+
+    var festejo2 = document.querySelector('#festejo2');
+   
+
     btnGameTwo.addEventListener('click', function(){ 
-        if (x == 4) { 
-            alert("ganaste");
+        if (x == 1) { 
+            festejo2.className = ('festejo22');
+            btnGameTwo.click;
         } else {
             alert("perdiste");
         }
     });
-
+    
 });
